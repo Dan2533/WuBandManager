@@ -10,36 +10,42 @@ public class BandManager {
 
     public String whileLoop() {
         String result = "";
-        // create a `counter`
-        // while `counter` is less than length of array
-            // begin loop
+        int i = 0;
+        while (i< wuMemberArray.length); {
+            result += wuMemberArray[i].toString();
 
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-
-            // end loop
+        }
         return result;
     }
+        // create a `counter`
+        // while `counter` is less than length of array
+        // begin loop
 
+        // use `counter` to identify the `current Person` in the array
+        // get `string Representation` of `currentPerson`
+        // append `stringRepresentation` to `result` variable
+
+        // end loop
 
 
     public String forLoop() {
         String result = "";
+        for (int i = 0; i < wuMemberArray.length; i++) {
+            result += wuMemberArray[i].toString();
+
+        }
+            return result;
+        }
         // identify initial value
         // identify terminal condition
         // identify increment
 
         // use the above clauses to declare for-loop signature
-            // begin loop
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-            // end loop
-
-        return result;
-    }
-
+        // begin loop
+        // use `counter` to identify the `current Person` in the array
+        // get `string Representation` of `currentPerson`
+        // append `stringRepresentation` to `result` variable
+        // end loop
 
 
     public String forEachLoop() {
@@ -49,9 +55,11 @@ public class BandManager {
 
         // use the above discoveries to declare for-each-loop signature
             // begin loop
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-            // end loop
+        for(WuMember member : wuMemberArray) {
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
+            result += member;
+        }    // end loop
 
         return result;
     }
